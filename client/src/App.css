@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Huninn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+:root {
+  --font-primary: "Huninn", sans-serif;
+  --text-color-primary: #234d38;
+  --text-color-secondary: #b2bdb9;
+  --background-color-primary: #e5f1ed;
+  --color-button-text-button: #fff;
+}
+
+* {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-color);
+}
+html {
+  scroll-behavior: smooth;
+}

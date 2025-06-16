@@ -1,0 +1,18 @@
+.container {
+  padding: 2em;
+}
+
+.listNav {
+  display: flex;
+  gap: 3em;
+  list-style: none;
+}
+.listNav li {
+  font-size: 18px;
+  font-weight: 500;
+}
+.listNav a {
+  text-decoration: none;
+  font-family: var(--font-primary);
+  color: var(--text-color);
+}
