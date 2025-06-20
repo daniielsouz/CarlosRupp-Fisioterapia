@@ -1,0 +1,88 @@
+.containerServices {
+  padding: 2em;
+}
+
+.serviceCard {
+  background-color: var(--text-color-primary);
+  color: var(--color-button-text-button);
+  padding: 1.5em 1em;
+  border-radius: 24px;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+.serviceCard:hover {
+  transform: scale(1.03);
+  box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-hover-primary);
+  color: var(--text-color-primary);
+}
+
+.icons {
+  width: 70px;
+  background-color: #fff;
+  margin-right: 1em;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+.serviceCard:hover .icons {
+  background-color: var(--background-color-primary);
+}
+
+.titleIcons {
+  display: flex;
+}
+.titleIcons {
+  display: flex;
+  align-items: center;
+}
+
+.serviceCard h2 {
+  margin: 0;
+  padding-bottom: 0.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-hover-primary);
+}
+
+.serviceCard p {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-10px);
+  margin-top: 0;
+  font-size: 1rem;
+  line-height: 1.6em;
+  transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease,
+    margin-top 0.4s ease;
+  pointer-events: none;
+}
+
+.serviceCard p.open {
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+  margin-top: 1em;
+  pointer-events: auto;
+}
+
+.whatsappButton {
+  display: inline-block;
+  margin-top: 1.2em;
+  padding: 0.6em 1.2em;
+  background-color: var(--background-color-primary);
+  color: var(--text-color-primary);
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.whatsappButton:hover {
+  background-color: var(--text-color-primary);
+  color: #fff;
+}

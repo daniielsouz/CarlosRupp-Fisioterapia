@@ -5,7 +5,7 @@
   --text-color-primary: #234d38;
   --text-color-secondary: #b2bdb9;
   --background-color-primary: #e5f1ed;
-  --color-button-text-button: #fff;
+  --color-button-text-button: #eae6e6;
 }
 
 * {
@@ -16,4 +16,8 @@
 }
 html {
   scroll-behavior: smooth;
+}
+
+.eapps-widget-toolbar-panel-edit {
+  display: none !important;
 }

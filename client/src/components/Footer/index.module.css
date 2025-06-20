@@ -1,0 +1,42 @@
+.containerFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(background-color);
+  color: #f8f9fa;
+  padding: 2em 1em;
+  gap: 2em;
+}
+
+.socialContainer {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.socialLink {
+  font-family: var(--font-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  text-decoration: none;
+  color: #234d38;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.socialLink:hover {
+  transform: translateY(-3px);
+}
+
+.socialLink img {
+  width: 24px;
+  height: 24px;
+}
+
+.copy {
+  font-size: 0.9em;
+  font-family: var(--font-primary);
+  color: var(--text-color-primary);
+  text-align: center;
+}
