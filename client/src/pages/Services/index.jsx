@@ -24,7 +24,7 @@ export default function Services() {
       url: Reabilitacao,
     },
     {
-      title: "Fisioterapia Funcional em Condições Neurológicas",
+      title: "Fisioterapia Neurológica: Movimento, Função e Qualidade de Vida",
       description:
         "Atendimento a pacientes com AVC, Alzheimer, Parkinson, esclerose múltipla e outras condições neurológicas. Foco na reabilitação motora, equilíbrio, marcha, coordenação e independência funcional.",
       url: Neurologia,
@@ -63,7 +63,7 @@ export default function Services() {
         {services.map((service, index) => {
           const isOpen = openIndex === index;
           const whatsappLink = `https://wa.me/555184825686?text=${encodeURIComponent(
-            `Olá Carlos! Gostaria de saber sobre ${service.title}`
+            `Olá Carlos! Gostaria de saber sobre o serviço:  ${service.title}`
           )}`;
 
           return (
