@@ -58,7 +58,11 @@ export default function Services() {
   }
 
   return (
-    <section id="services" className={style.sectionServices}>
+    <section
+      id="services"
+      className={style.sectionServices}
+      aria-label="Serviços oferecidos por Carlos Rupp"
+    >
       <div className={style.containerServices}>
         {services.map((service, index) => {
           const isOpen = openIndex === index;
@@ -72,8 +76,12 @@ export default function Services() {
               className={style.serviceCard}
               onClick={() => toggleIndex(index)}
               tabIndex={0}
+              role="button"
+              aria-expanded={isOpen}
+              aria-controls={`service-desc-${index}`}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
                   toggleIndex(index);
                 }
               }}
@@ -82,11 +90,14 @@ export default function Services() {
                 <img
                   className={style.icons}
                   src={service.url}
-                  alt={service.title}
+                  alt={`Ícone representando ${service.title}`}
                 />
                 <h2>{service.title}</h2>
               </div>
-              <p className={isOpen ? style.open : style.closed}>
+              <p
+                id={`service-desc-${index}`}
+                className={isOpen ? style.open : style.closed}
+              >
                 {service.description}
               </p>
               {isOpen && (
@@ -96,6 +107,7 @@ export default function Services() {
                   rel="noopener noreferrer"
                   className={style.whatsappButton}
                   onClick={(e) => e.stopPropagation()}
+                  aria-label={`Entrar em contato via WhatsApp sobre o serviço ${service.title}`}
                 >
                   Entre em Contato
                 </a>
